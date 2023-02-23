@@ -1,1 +1,1 @@
-learning the hard way 
+0x03, C - Debugging 
