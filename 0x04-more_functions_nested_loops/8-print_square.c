@@ -1,15 +1,21 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * main - check the code
+ * print_square - print a square using the character #
  *
- * Return: Always 0.
- */
+ * @size: is the size of the square
+ *
+ * Return: Always 0 (Success)
+*/
 
-int main(void)
+void print_square(int size)
 {
-    print_square(2);
-    print_square(10);
-    print_square(0);
-    return (0);
+	int row, column;
+
+	for (row = 1; row <= size; ++row)
+	{
+		for (column = 1; column <= size; ++column)
+			_putchar('#');
+		_putchar('\n');
+	}
 }
