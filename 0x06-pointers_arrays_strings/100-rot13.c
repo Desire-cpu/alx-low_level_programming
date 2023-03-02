@@ -1,56 +1,31 @@
-#include "main.h"
-
-#include <stdio.h>
-
-
-/**
-
- * rot13 - encoder rot13
-
- * @s: pointer to string params
-
- *
-
- * Return: *s
-
- */
-
-
-char *rot13(char *s)
-
-{
-
-        int i;
-
-        int j;
-
-        char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-
-        char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-
-        for (i = 0; s[i] != '\0'; i++)
-
-        {
-
-                for (j = 0; j < 52; j++)
-
-                {
-
-                        if (s[i] == data1[j])
-
-                        {
-
-                                s[i] = datarot[j];
-
-                                break;
-
-                        }
-
-                }
-
-        }
-
-        return (s);
-
-}
+#include "main.h" 
+ /** 
+  * rot13 - Write a function that encodes a string using rot13 
+  * 
+  * @hi: This is my input string 
+  * 
+  * Return: String converted to rot13 
+  * 
+  */ 
+  
+ char *rot13(char *hi) 
+ { 
+         int index, count; 
+  
+         char minus[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; 
+         char mayus[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"; 
+  
+         for (index = 0; hi[index] != '\0'; ++index) 
+         { 
+                 for (count = 0; minus[count] != '\0' ; count++) 
+                 { 
+                         if (hi[index] == minus[count]) 
+                         { 
+                                 hi[index] = mayus[count]; 
+                                 break; 
+                         } 
+                 } 
+         } 
+         hi[index] = '\0'; 
+         return (hi); 
+ }
