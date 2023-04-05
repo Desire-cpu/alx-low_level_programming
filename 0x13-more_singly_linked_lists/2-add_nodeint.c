@@ -3,7 +3,7 @@
 /**
  * add_nodeint - funtion for new node as head
  *
- * @head: pointer 
+ * @head: pointer
  *
  * @n: integer n to add in a new node
  *
