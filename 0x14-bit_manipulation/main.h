@@ -1,10 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-/**
- * this file includes all
- * the prototypes
- * give on the tasks
- */
 
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
