@@ -10,19 +10,16 @@
  *
  * Return: number of bits to flip to get @m from @n
 */
+
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int t;
-	int repeat = 0;
-	unsigned long int flow;
-	unsigned long int mend = n ^ m;
+	unsigned int bit_value;
 
-	for (t = 63; t >= 0; t--)
+	for (bit_value = 0; n || m; n >>= 1, m >>= 1)
 	{
-		flow = mend >> i;
-		if (flow & 1)
-			repeat++;
+		if ((n & 1) != (m & 1))
+			bit_value++;
 	}
 
-	return (repeat);
+	return (bit_value);
 }
