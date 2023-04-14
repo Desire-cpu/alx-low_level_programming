@@ -1,8 +1,8 @@
 /*
  *
- * 
+ *
  * Filename: 100-elf_header.c
- * 
+ *
  * Auth: Junior ngondo
  */
 
@@ -270,8 +270,7 @@ void close_elf(int elf)
 }
 
 /**
- * main - Displays the information contained in the
- *        ELF header at the start of an ELF file.
+ * main - Displays the information contained.
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
